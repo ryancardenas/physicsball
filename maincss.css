@@ -1,0 +1,23 @@
+/*
+ Copyright (c) 2017 Ryan Cardenas
+*/
+/* 
+    Created on : Feb 11, 2017, 10:08:09 PM
+    Author     : Ryan
+*/
+
+
+html, body { width:99%; height:99%; background-color: lightblue;} /* just to be sure these are full screen*/
+
+canvas {  
+    display:block;
+    border: 1px black solid;
+    width: 100%;
+    image-rendering: optimizeSpeed;             // Older versions of FF
+    image-rendering: -moz-crisp-edges;          // FF 6.0+
+    image-rendering: -webkit-optimize-contrast; // Webkit (non standard naming)
+    image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
+    image-rendering: crisp-edges;               // Possible future browsers.
+    -ms-interpolation-mode: nearest-neighbor;   // IE (non standard naming)
+
+    } 
